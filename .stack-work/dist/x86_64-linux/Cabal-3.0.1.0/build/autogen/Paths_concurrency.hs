@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/2f45007664e6f3abc55cc869863bb73e8d6622f69f6124df13835052d50cc341/8.8.4/bin"
-libdir     = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/2f45007664e6f3abc55cc869863bb73e8d6622f69f6124df13835052d50cc341/8.8.4/lib/x86_64-linux-ghc-8.8.4/concurrency-0.1.0.0-9d4Jlxw4JdU3XVGKIlrPgm"
-dynlibdir  = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/2f45007664e6f3abc55cc869863bb73e8d6622f69f6124df13835052d50cc341/8.8.4/lib/x86_64-linux-ghc-8.8.4"
-datadir    = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/2f45007664e6f3abc55cc869863bb73e8d6622f69f6124df13835052d50cc341/8.8.4/share/x86_64-linux-ghc-8.8.4/concurrency-0.1.0.0"
-libexecdir = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/2f45007664e6f3abc55cc869863bb73e8d6622f69f6124df13835052d50cc341/8.8.4/libexec/x86_64-linux-ghc-8.8.4/concurrency-0.1.0.0"
-sysconfdir = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/2f45007664e6f3abc55cc869863bb73e8d6622f69f6124df13835052d50cc341/8.8.4/etc"
+bindir     = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/c3bab5bedcf12691c37c578cee04d1c397b61e204a4f63a52f517b835a246ef4/8.8.4/bin"
+libdir     = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/c3bab5bedcf12691c37c578cee04d1c397b61e204a4f63a52f517b835a246ef4/8.8.4/lib/x86_64-linux-ghc-8.8.4/concurrency-0.1.0.0-9d4Jlxw4JdU3XVGKIlrPgm"
+dynlibdir  = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/c3bab5bedcf12691c37c578cee04d1c397b61e204a4f63a52f517b835a246ef4/8.8.4/lib/x86_64-linux-ghc-8.8.4"
+datadir    = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/c3bab5bedcf12691c37c578cee04d1c397b61e204a4f63a52f517b835a246ef4/8.8.4/share/x86_64-linux-ghc-8.8.4/concurrency-0.1.0.0"
+libexecdir = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/c3bab5bedcf12691c37c578cee04d1c397b61e204a4f63a52f517b835a246ef4/8.8.4/libexec/x86_64-linux-ghc-8.8.4/concurrency-0.1.0.0"
+sysconfdir = "/homes/sq001/Desktop/Banking/.stack-work/install/x86_64-linux/c3bab5bedcf12691c37c578cee04d1c397b61e204a4f63a52f517b835a246ef4/8.8.4/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "concurrency_bindir") (\_ -> return bindir)

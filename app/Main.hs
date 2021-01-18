@@ -87,7 +87,7 @@ process n presub final c = do
         temp = Customer {name=tempname,account=tempaccount,balance=tempbalance}
     
     if number>10 then do
-        print temp
+        -- print temp
         process n presub final temp
     else if number==0 then putMVar final ()
          else do
@@ -141,5 +141,7 @@ main = do
     forkIO (process n presub final c9)
 
     w<-takeMVar final
-    print "Finish"
+    putStrLn "************************************"
+    print "Finish..."
+    putStrLn "************************************"
     
